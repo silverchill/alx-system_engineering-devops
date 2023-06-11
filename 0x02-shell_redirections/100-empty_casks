@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -type fd -name  "./~/" 
+find ~/list -empty -type fd  
