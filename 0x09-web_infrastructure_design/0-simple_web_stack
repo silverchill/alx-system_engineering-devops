@@ -1,0 +1,41 @@
+https://imgur.com/a/KUjWHdc   # This is the pictorial link of task 0
+
+What is a server?
+
+A server is a computer or a system that is designed to manage and provide resources, services, or data to other computers, known as clients, within a network. Servers can serve various purposes, such as hosting websites, managing email, storing files, or running applications.
+
+What is the role of the domain name?
+
+The domain name is a human-readable address that serves as a more user-friendly way to identify and locate resources on the internet. It is associated with a specific IP (Internet Protocol) address, allowing users to access websites and other online services using memorable names instead of numerical IP addresses.
+
+What type of DNS record is www in www.foobar.com?
+
+The "www" in www.foobar.com is typically a subdomain, and it is represented by a DNS (Domain Name System) record called a CNAME (Canonical Name) record. This record points to the canonical or primary domain, indicating that the www subdomain is an alias for the main domain.
+
+What is the role of the web server?
+
+A web server is responsible for processing and responding to requests from clients (web browsers) over the HTTP (Hypertext Transfer Protocol) or HTTPS (HTTP Secure) protocols. It serves web pages, static content, and dynamic content, handling tasks such as processing server-side scripts, managing user sessions, and delivering web content to users.
+
+What is the role of the application server?
+
+An application server is responsible for executing and managing applications or software programs. It handles the business logic and application-specific functionalities, often working in conjunction with a web server. The application server communicates with databases, processes user requests, and manages application-related tasks.
+
+What is the role of the database?
+
+The database stores and manages structured data, providing a systematic way to organize, retrieve, and update information. In the context of web development, the database is often used to store data required by web applications. It can be queried and updated by the application server to retrieve and store dynamic content, user information, and other relevant data.
+
+What is the server using to communicate with the computer of the user requesting the website?
+
+The server communicates with the computer of the user requesting the website using the HTTP or HTTPS protocols. These protocols define the rules for transmitting and receiving data between the web server and the user's web browser. HTTP is the standard protocol for unsecured communication, while HTTPS employs encryption (SSL/TLS) for secure and encrypted communication, especially important for sensitive transactions like online purchases or user logins.
+
+SPOF (Single Point of Failure):
+
+The infrastructure described seems to have a single point of failure, meaning that if a critical component fails, the entire system could become unavailable. For example, if the sole web server experiences a malfunction or goes offline, it would result in the unavailability of the entire website or web application. To mitigate this risk, a more resilient architecture would involve redundancy, where multiple servers are used to distribute the load and provide failover support.
+
+Downtime During Maintenance:
+
+The mentioned infrastructure implies that when maintenance activities are required, such as deploying new code that necessitates restarting the web server, there would be downtime. During this downtime, the website or application would be inaccessible to users. To minimize this impact, strategies like load balancing and rolling deployments can be implemented. Load balancing allows traffic distribution across multiple servers, ensuring that some servers can still handle requests while others undergo maintenance.
+
+Scalability Challenges:
+
+The infrastructure might face scalability challenges, especially if there's a sudden surge in incoming traffic. With a single web server, it may struggle to handle increased demand effectively. To address this, a scalable architecture involves distributing the load across multiple servers and employing technologies like load balancers to route traffic efficiently. Additionally, considering a cloud-based solution allows for dynamic scaling, where resources can be added or removed based on demand.
