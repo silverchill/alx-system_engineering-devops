@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Installation of Nginx
 
-apt-get install update
-apt-get install nginx
+apt-get install update -y
+apt-get install nginx -y 
 ufw allow 'Nginx HTTP'
 
 echo "Hello World!" > /var/www/html/index.html
