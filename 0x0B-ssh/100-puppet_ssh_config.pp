@@ -2,7 +2,7 @@
 
 file_line{'identify the file':
 path => '/etc/ssh/ssh_config',
-line => '~/.ssh/school',
+line => 'IdentityFile ~/.ssh/school',
 }
 
 file_line{'turn off passwd':
