@@ -5,7 +5,7 @@ path => '/etc/ssh/ssh_config',
 line => 'IdentityFile ~/.ssh/school',
 }
 
-file_line{'turn off passwd':
+file_line{'turn off password':
 path => '/etc/ssh/ssh_config',
 line => 'PasswordAuthentication no',
 }
