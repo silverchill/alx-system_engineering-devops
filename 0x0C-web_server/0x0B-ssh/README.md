@@ -1,1 +1,0 @@
-# Solving ssh related issues

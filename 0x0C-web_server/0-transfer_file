@@ -21,3 +21,4 @@ if [ "$#" -lt "4" ]; then
 else 
     scp -o StrictHostKeyChecking=no -i "$path_ssh" "$file_path" "$username"@"$ip":~/ 
 fi
+ 
