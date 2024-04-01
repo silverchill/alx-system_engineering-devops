@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Mr Marvel
+# redirecting permanently to Youtube
 
 redirect="\tlocation /redirect_me {\
-\t\t return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4\
-}"
+\n\t\t return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4\
+\n\t}"
 
-sed -e 47i\ "$redirect" -i /etc/nginx/sites-available/default
+sed -e 47i\\"$redirect" -i /etc/nginx/sites-available/default
