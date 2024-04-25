@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""script that, using this REST API, for a given employee ID,
+returns information about his/her TODO list progress"""
 
 from sys import argv
 import requests
@@ -13,7 +15,7 @@ if __name__ == "__main__":
 
     todo_list = todo.json()
     user_list = user.json()['name']
-    ini_length = len(user_list)
+    ini_length = len(todo.json())
     length = 0
 
     for task in todo_list:
