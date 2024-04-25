@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-import requests
 from sys import argv
+import requests
 
 if __name__ == "__main__":
     num_ = argv[1]
@@ -10,7 +10,7 @@ if __name__ == "__main__":
     todo_url = "{}/todos?userId={}".format(given_url, num_)
     user = requests.get(user_url)
     todo = requests.get(todo_url)
-    
+
     todo_list = todo.json()
     user_list = user.json()['name']
     ini_length = len(user_list)
