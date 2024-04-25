@@ -14,16 +14,16 @@ if __name__ == "__main__":
     todo = requests.get(todo_url)
 
     todo_list = todo.json()
-    user_list = user.json()['name']
-    ini_length = len(todo.json())
-    length = 0
+    user_name = user.json()['name']
+    total_task = len(todo.json())
+    done_task = 0
 
     for task in todo_list:
         if task['completed'] is True:
-            length += 1
+            done_task += 1
 
     print("Employee {} is done with tasks({}/{}):"
-          .format(user_list, length, ini_length))
+          .format(user_name, done_task, total_task))
     for task in todo_list:
         if task['completed'] is True:
             print('\t {}'.format(task['title']))
